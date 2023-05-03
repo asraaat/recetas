@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Libro de recetas Asrat</title>
+        <div class="mydiv animate-bg">
+            <h1 class="sometext">
+                LIBRO DE RECETAS DE ASRAT
+            </h1>
+        <meta charset="utf-8">
+        <style>
+        body {
+          margin: 0;
+          padding: 0;
+          background-color: black;
+          box-sizing: border-box;
+    }
+
+        .sometext {
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 94%;
+          font-family: Lucida Console, Monaco, monospace;
+    }
+
+        .mydiv {
+          position: relative;
+          margin: 10% auto 0;
+          width: 70%;
+          height: 200px;
+          background: linear-gradient(90 deg, #000, #000000);
+    }
+        .animate-bg::before, .animate-bg::after {
+          content:"" ;
+          position: absolute;
+          left: -8px;
+          top: -8px;
+          background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5, #ff04cc,
+          #e6036d, #fb0094, #ff6600, #04c2e4, #adad02, #00c3ff);
+          background-size: 300%;
+          width: calc(100% + 16px);
+          height: calc(100% + 16px);
+          z-index: -1;
+          animation: BGgradient 15s ease infinite;
+    }
+        @keyframes BGgradient {
+        0% {
+          background-position: 0% 200%;
+     }
+        50% {
+          background-position: 200% 0%;
+     }
+        100% {
+          background-position: 0% 330%;
+     } 
+    }
+       .animate-bg::after {
+         filter: brightness(1.4);
+         filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+         filter: blur(15px);
+    }    
+        h3 {
+            color:rgb(8, 247, 255);
+            }
+        body {
+            background-color: rgb(59, 56, 59);
+            }
+        h2 {
+            background-color: brown;
+        }
+        body {
+            color:white
+        }    
+        h4 {
+            color:rgb(26, 255, 179)
+        }
+        .foto2 { 
+            padding: 10px; 
+            margin: 10px; 
+            float: right; 
+            width: 600px; 
+        }
+        u {
+            color: rgb(72, 255, 0);
+        }
+        .foto3 { 
+            padding: 10px; 
+            margin: 10px; 
+            float: right; 
+            width: 600px; 
+        }
+        #LinksRecetas {
+            background-color: rgb(247, 0, 255);
+        }
+        #Contenidos {
+            background-color: rgb(247, 0, 255);
+        }
+        .body, h1 {
+            font-family: Lucida Console, Monaco, monospace;
+        }
+        th {
+            color: rgb(252, 151, 0);
+        }
+        header {
+            text-align: center;
+            padding: 25px 0;
+        }
+        nav a{
+            display:inline-block;
+            text-decoration: none;
+            color: #696969;
+            margin: 0 30px;
+            padding: 5px 15px;
+            border-radius: 30px
+        }    
+        nav a:hover{
+            background-color: #000;
+            color: #fff;
+        }
+        .encabezado2 {
+            background-image: url(https://img.freepik.com/foto-gratis/gradiente-gris-negro-falta-definicion-llanura-lujo-abstracta-utilizado-como-pared-estudio-fondo-exhibir-sus-productos_1258-63747.jpg);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            transition: 0.7s;
+            padding: 20px 10px;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="encabezado2">
+        <nav>
+            <a href="#Introduccion"> Inicio </a> 
+            <a href="#Receta1"> Receta 1 </a>
+            <a href="#Receta2"> Receta 2 </a>
+            <a href="#Receta3"> Receta 3 </a>
+            <a href="#Links"> Links recetas </a>     
+        </nav>
+        </header>
+        </body>
+        <body>
+            <br>
+            <div class="Introduccion">
+        <h2 id="Introduccion"> Introducción</h2>
+        
+        <p>Esta web trata de explicar y ayudar a la gente para que haga su comida
+            preferida en su casa. <br>
+            
+        </p>
+        
+        <h2 id="Receta1">Receta #1</h2>
+        <h3>Hamburguesa Casera</h3>
+        <ul>
+            <strong><li>Tiempo total: 25 minutos</li></strong>
+            <li>Elaboración:<strong> 15 minutos</li></strong>
+            <li>Cocción <strong>10 minutos</li></strong>
+            <li>Reposo <strong>20 minutos</li></strong>
+        </ul>
+        <img class="foto2" src="https://img-global.cpcdn.com/recipes/4e6434d84b9299aa/680x482cq70/hamburguesa-casera-foto-principal.jpg">
+        <table>
+            <thead>
+                <tr> 
+                   <th>Ingredientes</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                 <td> Carne picada de ternera</td>
+            <td> 180 g </td> </tr>
+            <tr>
+                <td> Yema de huevo </td>
+            <td> 1 </td> </tr>
+            <td> Bacon </td>
+            <td> 2 </td>
+            <tr> 
+                <td> Lechuga </td>
+            <td> Al gusto </tr>
+            <tr>    
+                <td> Tomate </td>
+            <td> Al gusto </td> </tr>
+            <tr> 
+                <td> Queso </td>
+            <td> Al gusto </td> </tr>
+            <tr> 
+                <td> Mostaza </td>
+            <td> Al gusto </td> </tr>
+            <tr>
+                <td> Pan de hamburguesa </td>
+            <td> Al gusto </td> </tr>
+            <tr>
+                 <td> Pimienta negra molida </td>
+                 <td> Al gusto </td>
+            </tr>
+            <tr>
+                 <td> Sal </td>
+                 <td> Al gusto </td>
+            </tr>
+            <tr>
+                 <td>Mantequilla </td>
+                 <td> Al gusto </td>
+            </tr>
+            <tr>
+                 <td>Aceite de olvida</td>
+                 <td>Al gusto</td>
+            </tr>
+            
+           
+            </tbody>
+        </table>
+        
+
+        <p><u><strong>Paso 1:</strong></u> Pedir la carne picada al momento en carnicería, <br>
+            o  picar en casa adecuadamente, dejando una buena textura. <br>
+            Se puede mezclar la carne de ternera con un poco de cerdo. <br>
+            Añadir la yema de huevo opcional y un poco de bacon muy picado, <br>
+            salpimentar, mezclar y formar la hamburguesa.<br> </p>
+
+        <p><u><strong>Paso 2:</strong></u> Cortar el pan por la mitad, untar con mantequilla por dentro <br>
+            y tostar ligeramente a la plancha. Colocar una base de lechuga u otras hojas verdes, <br>
+            y una o varias rodajas de tomate. </p>
+
+        <p><u><strong>Último paso:</strong></u> Calentar a fuego medio-fuerte la plancha, <br>
+            untar ligeramente con aceite la hamburguesa reposada y cocinar sin tocar durante 2-3 minutos. <br>
+            Dar la vuelta, poner una loncha o más de queso, y cocinar unos 3-4 minutos más. Retirar y disponer sobre el tomate. <br>
+            Añadir más beicon u otros complementos (pepinillos, cebolla caramelizada...), <br>
+            untar con la salsa elegida la parte superior del pan y cerrar.<br>
+
+        <h4>Tutorial de receta de hamburguesa casera </h4>   
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jljGnCUnYTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2 id="Receta2">Receta #2</h2>
+        <ul>
+            <h3>Pizza Casera</h3>
+            <strong><li>Tiempo total: 15 minutos</li></strong>
+            <li>Elaboración:<strong> 12 minutos</li></strong>
+            <li>Cocción <strong>9 minutos</li></strong>
+        </ul>
+        <img class="foto3" src="https://img-global.cpcdn.com/recipes/530ae70edc0a94cf/1200x630cq70/photo.jpg">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredientes</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Harina de trigo</td>
+               <td> 160 g </td> </tr>
+               <tr>
+                   <td> Agua templada </td>
+               <td> 100 ml </td> </tr>
+                   <td> Sal </td>
+               <td> 1 </tr>
+               <tr>    
+                   <td> Aceite de olvida </td>
+               <td> 1 </td> </tr>
+               <tr> 
+                   <td> Levadura seca </td> 
+               <td> 7g </td> </tr> 
+               </tr>
+            </tbody>
+        </table>
+            <p><strong><u>Paso 1:</strong></u> En un vaso, vierte el agua templada. <br>
+            Disuelve la levadura en el agua. En un bol ponemos la harina, <br>
+            la sal y, poco a poco, vertemos el agua con la levadura. <br>
+            Es más fácil si vamos amasando poco a poco a medida que echamos el agua, <br>
+            hasta verter toda y lograr una masa homogénea. 
+</p>
+            <p><strong><u>Paso 2:</strong></u> Tras esto, coloca la masa en la encimera, <br>
+                cúbrete las manos de harina para que no se pegue y ponte a amasar. <br>
+                Si la masa se queda pegajosa ve añadiendo más harina. <br>
+                Ésta tiene que quedar lo suficientemente seca para que no se pegue en la mesa <br>
+                 o las manos, pero no demasiado, porque si no puede romperse en el horno. </p>
+
+            <p><strong><u>Paso 3</u></strong> Una vez que la masa esté homogénea, <br>
+                elástica, pero no pegajosa, incorpora el aceite, y vuelve a amasar <br>
+                hasta que se integre por completo. Haz una bola y realiza dos incisiones <br>
+                para que pueda crecer bien. Devúelvela al bol, tápalo con un paño humedo <br>
+                y dejalo que repose a temperatura ambiente. </p>     
+
+            <p><strong><u>Paso 4:</strong></u> Disfrutar     
+        
+<h4>Tutorial de receta de pizza casera</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vqeglXJlgJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>       
+            <h2 id="Receta3">Receta #3</h2>
+        <ul>
+            <h3>Tortilla de patatas casera</h3>
+            <img class="foto2" src="tortilla.jpg">
+            <strong><li>Tiempo total: 14 minutos</li></strong>
+            <li>Elaboración:<strong> 10 minutos</li></strong>
+            <li>Cocción <strong>4 minutos</li></strong>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredientes</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Patatas</td>
+               <td> 1 kg </td> </tr>
+               <tr>
+                   <td> Cebolla </td>
+               <td> 1 unidad grande </td> </tr>
+                   <td> Huevos </td>
+               <td> 5 </tr>
+               <tr>    
+                   <td> Aceite </td>
+               <td> Al gusto </td> </tr>
+               <tr> 
+                   <td> Sal </td> 
+               <td> Al gusto </td> </tr> 
+               </tr>
+            </tbody>
+        </table>
+        <p><strong><u>Paso 1:</strong></u> En primer lugar, pelamos y cortamos la cebolla. <br>
+            La elección del tipo de corte depende del gusto de cada persona. <br>
+            Si os gusta encontrar trozos de cebolla en la tortilla, <br>
+            debemos cortarla en trozos gruesos, si preferís que pase desapercibida, <br>
+            la picamos finamente. </p>
+         
+        <p><strong><u>Paso 2:</strong></u> Una vez picada la cebolla, la pochamos en una sartén <br>
+            con un poco de aceite de oliva. Mientras cocinamos la cebolla, <br>
+            pelamos y cortamos las patatas en tacos del grosor que deseemos. <br>
+            Podemos cortarlas también en finas láminas. </p>
+
+        <p><strong><u>Paso 3</u></strong> Calentamos abundante aceite en una sartén. <br>
+        Una vez que el aceite alcance una temperatura adecuada, echamos los tacos de patata. <br>
+        Cocinamos hasta que la patata esté tierna pero, preferiblemente, <br>
+        sin que llegue a dorarse. </p>
+
+        <p><strong><u>Paso 4</u></strong> Cuando la cebolla esté tierna la apartamos de la sartén <br> 
+        y la ponemos en un cuenco grande. Reservamos. Del mismo modo, <br>
+        cuando las patatas estén tiernas, las retiramos de la sartén <br>
+        y las ponemos dentro de un escurridor para quitar el exceso de aceite. <br>
+        Hecho esto, añadimos los tacos de patata al cuenco con la cebolla.<br> </p>
+        <img class="foto2" src="https://okdiario.com/img/2019/07/26/receta-de-tortilla-de-patatas-con-puerros.jpg">
+        <p><strong><u>Paso 5</u></strong> En otro cuenco, batimos los huevos <br>
+        con un poco de sal. Una vez batidos, vertemos los huevos en el cuenco <br>
+        donde tenemos las patatas y la cebolla. Si lo deseemos, podemos añadir un poco más de sal. <br>
+        Mezclamos. </p>
+
+        <p><strong><u>Paso 6</u></strong> Ponemos a calentar un poco de aceite en una sartén <br>
+            antiadherente de, aproximadamente, 24 centímetros de diámetro. <br>
+            Vertemos en la sartén el contenido del cuenco. <br>
+            Cocinamos durante unos minutos a fuego medio. </p>
+            
+        <p><strong><u>Paso 7</u></strong> Con la ayuda de un plato, volteamos la tortilla <br>
+        Seguimos cocinando otros pocos minutos por el otro lado. <br>
+        Si lo deseamos, podemos voltear la tortilla varias veces para controlar mejor el proceso <br>
+         de cocción. Una vez que la tortilla esté dorada por ambos lados, <br>
+         la volcamos sobre un plato y servimos. </p>
+
+         <p><strong><u>Paso 8</u></strong> Comer la tortilla</p>
+        <h4>Tutorial de receta de tortilla de patatas casera</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KDI1lVRV8g8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+        <h2 id="Links"> Links recetas</h2>
+             <p><em>Hamburguesa casera: <a href="https://www.directoalpaladar.com/recetas-de-carnes-y-aves/como-hacer-hamburguesas-caseras">Receta de Hamburguesa</a></em></p>
+             <p><em>Pizza casera: <a href="https://www.directoalpaladar.com/recetario/31-recetas-de-pizza-una-pizza-para-cada-dia-del-mes">Receta de Pizza</a></em></p>
+             <p><em>Tortilla de patatas casera: <a href="https://cocina-casera.com/tortilla-de-patatas-casera/">Receta de Tortilla</a></em></p>
+        
+        </head>
+    </body>
+</html>
